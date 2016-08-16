@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PyQuadTree.iml" filepath="$PROJECT_DIR$/.idea/PyQuadTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../netcdfReader/.idea/netcdfReader.iml" filepath="$PROJECT_DIR$/../netcdfReader/.idea/netcdfReader.iml" />
     </modules>
   </component>
 </project>
