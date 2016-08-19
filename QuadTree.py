@@ -1,7 +1,7 @@
 __author__ = 'caleb buahin'
 
 
-#Generic geometric object that must be implemented by other geometric object.
+#Generic geometric object that must be implemented by other geometric objects.
 class GObject:
     def __init__(self):
         pass
@@ -11,14 +11,14 @@ class GObject:
     def get_bounds(self):
         pass
 
-    # Returns true if this geometric object contains point.
+    # Returns true if this geometric object contains given point.
     def contains(self, point):
         return False
 
 # A triangle geometric object. 
 class Triangle(GObject):
 
-    #initialize with the 3 points for a triangle p1 , p2, and p3 each of which is an array of length 2 represent x and y values
+    #initialize triangle with the 3 points/corners for a triangle p1 , p2, and p3 each of which is an array of length 2 represent x and y values
     def __init__(self, p1, p2, p3):
         GObject.__init__(self)
         self.P1 = p1
@@ -56,7 +56,7 @@ class Triangle(GObject):
 class QuadTree:
 
     # The quadtree is initialized with a level representing the level of this particular QuadTree node. The outermost QuadTree
-    # parent is initialized with the maximum number of depth levels you wanted to use. Child QuadTree nodes are decremented by 1 (see QuadTree.split).
+    # parent is initialized with the maximum number of depth levels you want to use. Succesive child QuadTree nodes are decremented by 1 (see QuadTree.split).
     # bounds represents the boundaries of this QuadTree node [Xmin, Xmax, Ymin, Ymax].
     # max_objects represents the maximum number of objects that can be stored on this node before partitioning/spliting is necessary.
     def __init__(self, level, bounds, max_objects=5):
